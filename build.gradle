@@ -1,0 +1,41 @@
+/*
+ * UCF COP3330 Summer 2021 Assignment 4 Solution
+ * Copyright 2021 Gianni Angelone
+ */
+
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+group 'oop.assignment_4'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.7'
+
+    testImplementation 'org.mockito:mockito-core:3.+'
+
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testRuntimeOnly 'org.testfx:testfx-junit5:4.0.16-alpha'
+}
+
+javafx {
+    version = "16"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClassName = 'ucf.assignments.ToDoListApplication'
+}
