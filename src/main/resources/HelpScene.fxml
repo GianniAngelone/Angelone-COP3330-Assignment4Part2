@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.HelpControl">
+    <top>
+        <Label text="Help Screen" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+            </padding>
+        </Label>
+    </top>
+    <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+    </padding>
+   <center>
+        <TextArea fx:id="helpTextArea" prefHeight="200.0" prefWidth="200.0" text="NOTE: This is a help window***
+
+                To Do List:
+                First an empty table will be displayed.
+                You can add an item to the table by clicking the 'Add Item' button, where you can add a due date and
+                a description. Click 'OK'.
+                You can remove an item from the table by selecting the item and clicking 'Remove Item'.
+                To determine a completed status of an item, click 'Change Status' to true=complete, or false=incomplete.
+                You can edit an item by selecting an item on the table, and clicking 'Edit Item'.
+                - Here you can change the current description or due date. Click 'OK'.
+                You can clear all items in the list by clicking 'Clear List'.
+                If you would like to clear all current items in the list, click the 'Clear List' button.
+                Display Options:
+                You can choose display options, by clicking 'Display Options', you can click 'Display Complete',
+                'Display Incomplete', or 'Display All'
+                You can save a list by clicking on the file drop down and click 'Save List'
+                - From here, you can choose where to save the file and what to name it.
+                You can load a previously saved list by selecting 'File' drop down clicking 'Load List'.
+                - You select a list and click 'Open'." wrapText="true" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

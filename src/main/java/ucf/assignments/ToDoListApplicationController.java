@@ -46,6 +46,11 @@ public class ToDoListApplicationController {
         tableOperator.setTable(toDoListItemsView); //Setting the table
         tableOperator.loadTable(toDoList); //Adding list items
     }
+    @FXML
+    public void helpPressed() {
+        Parent page = sceneOperator.readyScene(Scenes.HELP);
+        sceneOperator.popUpScene("Help!", page); //Display the help page
+    }
     //list operations
     @FXML
     public void addItemButtonPressed() {

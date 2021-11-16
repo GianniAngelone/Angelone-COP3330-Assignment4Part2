@@ -3,7 +3,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableView?>
@@ -13,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.image.ImageView?>
 <!--
   ~ UCF COP3330 Fall 2021 Assignment 4 Solution
   ~ Copyright 2021 Gianni Angelone
@@ -128,6 +127,9 @@
     </center>
     <right>
         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="helpButton" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#helpPressed" pickOnBounds="true" preserveRatio="true" />
+            </children>
         </VBox>
     </right>
 </BorderPane>

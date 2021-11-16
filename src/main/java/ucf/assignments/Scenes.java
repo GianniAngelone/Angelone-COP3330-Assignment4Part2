@@ -8,7 +8,8 @@ package ucf.assignments;
 public enum Scenes {
     MAIN("ToDoListApplication.fxml"),
     ADD("AddNewItemScene.fxml"),
-    EDIT("EditItemScene.fxml");
+    EDIT("EditItemScene.fxml"),
+    HELP("HelpScene.fxml");
 
     private final String fileName;
 
